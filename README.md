@@ -1,4 +1,3 @@
-```markdown
 # Kubernetes RBAC Dashboard — Local Demo Setup
 
 This repository demonstrates running a **Kubernetes Dashboard** in a local environment with **RBAC (Role-Based Access Control)** enabled, using two sample applications:
@@ -19,6 +18,9 @@ This repository demonstrates running a **Kubernetes Dashboard** in a local envir
    - Kubernetes RBAC for secure access control  
    - Kubernetes Dashboard UI for cluster management  
    - Demo apps illustrating scaling and persistent storage concepts
+
+  ![Dashboard Demo](dashboard-local.gif)
+
 
 ---
 
@@ -117,8 +119,3 @@ Then open **[[https://localhost:8443](https://localhost:8](http://localhost:8001
 
 * [RBAC Authorization in Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 * [PersistentVolume & PVC Concepts](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
-
----
-
-```
-```
