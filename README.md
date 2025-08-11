@@ -184,12 +184,3 @@ kind delete cluster --name local-kind
 * [Kubernetes HPA](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 * [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
 * [KIND Documentation](https://kind.sigs.k8s.io/)
-
----
-
-```
-
----
-
-If you give me your actual GIF file or upload it here, I can **replace the placeholder link** and make it ready to push to your repo. Would you like me to also include **load-testing steps** so users can see the HPA in action?
-```
