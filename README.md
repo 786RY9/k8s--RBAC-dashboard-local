@@ -89,29 +89,8 @@ kubectl apply -f nginx-storage/
   📚 [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
 
 ---
-
-## 🖥 Usage Example
-
-```bash
-# 1. RBAC setup
-kubectl apply -f rbac/
-
-# 2. Dashboard deployment
-helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
-helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard \
-  --namespace kubernetes-dashboard --create-namespace
-
-# 3. Django app + HPA
-kubectl apply -f django-hpa/
-
-# 4. Nginx app + PV & PVC
-kubectl apply -f nginx-storage/
-
-# 5. Dashboard access
-kubectl -n kubernetes-dashboard port-forward service/kubernetes-dashboard 8443:443
-```
-
-Then open **[[https://localhost:8443](https://localhost:8](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/pod/nginx/nginx-deployment-55bd8ff695-zxzgd?namespace=nginx))** in your browser, log in using the RBAC token or ServiceAccount, and explore your deployed workloads.
+### Run: kubectl proxy and got below link
+Then open **[[https://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/pod/nginx/nginx-deployment-55bd8ff695-zxzgd?namespace=nginx](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/pod/nginx/nginx-deployment-55bd8ff695-zxzgd?namespace=nginx))** in your browser, log in using the RBAC token or ServiceAccount, and explore your deployed workloads.
 
 ---
 
